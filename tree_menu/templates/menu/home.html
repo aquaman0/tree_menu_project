@@ -1,0 +1,14 @@
+{% extends 'sample.html' %}
+
+{% block title %} My Home Page {% endblock %}
+
+{% block header %}
+    {% load draw_menu %}
+    <nav>
+        {% draw_menu 'main_menu' %}
+    </nav>
+{% endblock %}
+
+{% block body %}
+<h1>Body of HTML</h1>
+{% endblock %}

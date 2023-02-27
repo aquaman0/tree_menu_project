@@ -1,0 +1,69 @@
+  body {
+    margin: 0;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    font-family: 'Raleway', sans-serif;
+  }
+
+  header {
+    height: auto;
+    margin: 0;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    margin: 10px 0;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  nav ul li {
+    margin: 0px 0px 0 0;
+    display: inline-block;
+    background-color: transparent;
+  }
+
+  nav a {
+    display: block;
+    padding: 0 10px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+    text-decoration:none;
+  }
+
+  nav a:hover {
+    background-color: #000000;
+    color: #F63;
+  }
+
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+  }
+
+  nav ul li:hover > ul {
+    display: inherit;
+  }
+
+  nav ul ul li {
+    width: 100%;
+    min-width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+    z-index: 99999;
+  }
+
+  li > a:after { content:  ' ▼'; }
+  li > a:only-child:after { content: ''; }
